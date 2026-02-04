@@ -29,7 +29,7 @@ def calculate(num1: int, operator: str, num2: int):
             # Del a på b.
             # OBS: Her er det viktig at vi sjekker om num2 er 0, siden vi kan ikke dele ting på 0.
             if num2 == 0:
-                return "Det er ikke mulig å dele " num1 + " på " + num2
+                return "Det er ikke mulig å dele " + num1 + " på " + num2
             return str(num1/num2)
         # Hvis brukeren når denne casen, betyr det at brukeren har spesifisert en ugyldig operatør.
         case _:
