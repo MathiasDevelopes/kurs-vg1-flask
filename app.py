@@ -23,19 +23,22 @@ def calculate(num1: int, operator: str, num2: int):
     match operator:
         case 'pluss':
             # Pluss sammen tallene
-            return str(num1+num2)
+            return str(num1 + num2)
         case 'minus':
             # Subtraher tallene.
-            return str(num1-num2)
+            return str(num1 - num2)
         case 'ganger':
             # Gang sammen tallene
-            return str(num1*num2)
+            return str(num1 * num2)
         case 'del':
             # Del num1 på num2.
             # OBS: Her er det viktig at vi sjekker om num2 er 0, siden vi ikke kan dele ting på 0.
             if num2 == 0:
                 return "Det er ikke mulig å dele " + str(num1) + " på " + str(num2)
-            return str(num1/num2)
+            return str(num1 / num2)
+        case 'opphoyd':
+            return str(num1 ** num2)
+        
         # Hvis brukeren når denne casen, betyr det at brukeren har spesifisert en ugyldig operatør.
         case _:
             return "Ugyldig operatør " + operator
