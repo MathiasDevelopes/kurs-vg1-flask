@@ -18,8 +18,8 @@ def hello(name: str):
 @app.route('/calculate/<int:num1>/<string:operator>/<int:num2>')
 def calculate(num1: int, operator: str, num2: int):
 
-    # Her bruker vi en "match" statement for å sjekke om operator er en av de gyldige du kan bruke.
-    # Det flotte med dette er at vi kan enkelt legge til nye cases.
+    # Vi sjekker hvilken operator brukeren har valgt
+    # Lett å legge til flere operatorer senere
     match operator:
         case 'pluss':
             # Pluss sammen tallene
