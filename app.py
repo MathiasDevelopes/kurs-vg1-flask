@@ -46,7 +46,8 @@ def calculate(num1: int, operator: str, num2: int):
         case 'opphoyd':
             return str(num1 ** num2)
         
-        # Hvis brukeren når denne casen, betyr det at brukeren har spesifisert en ugyldig operatør.
+        # Hvis brukeren når denne casen, betyr det at operatoren ikke er gyldig.
+        # Med andre ord: operator-variabelen har en verdi som ikke finnes i noen av de andre case-blokkene.
         case _:
             return "Ugyldig operatør " + operator
 
