@@ -30,7 +30,7 @@ def calculate(num1: int, operator: str, num2: int):
         case 'ganger':
             # Gang sammen tallene
             return str(num1 * num2)
-        case 'del':
+        case 'delt':
             # Del num1 på num2.
             # OBS: Her er det viktig at vi sjekker om num2 er 0, siden vi ikke kan dele ting på 0.
             if num2 == 0:
