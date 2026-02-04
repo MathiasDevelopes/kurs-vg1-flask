@@ -30,8 +30,8 @@ def calculate(num1: int, operator: str, num2: int):
             # Gang sammen tallene
             return str(num1*num2)
         case 'del':
-            # Del a på b.
-            # OBS: Her er det viktig at vi sjekker om num2 er 0, siden vi kan ikke dele ting på 0.
+            # Del num1 på num2.
+            # OBS: Her er det viktig at vi sjekker om num2 er 0, siden vi ikke kan dele ting på 0.
             if num2 == 0:
                 return "Det er ikke mulig å dele " + str(num1) + " på " + str(num2)
             return str(num1/num2)
