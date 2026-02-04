@@ -19,6 +19,7 @@ def hello(name: str):
 def calculate(num1: int, operator: str, num2: int):
 
     # Her bruker vi en "match" statement for å sjekke om operator er en av de gyldige du kan bruke.
+    # Det flotte med dette er at vi kan enkelt legge til nye cases.
     match operator:
         case 'pluss':
             # Pluss sammen tallene
