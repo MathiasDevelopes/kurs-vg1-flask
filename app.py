@@ -35,7 +35,14 @@ def calculate(num1: int, operator: str, num2: int):
             # OBS: Her er det viktig at vi sjekker om num2 er 0, siden vi ikke kan dele ting på 0.
             if num2 == 0:
                 return "Det er ikke mulig å dele " + str(num1) + " på " + str(num2)
+
+            # Vi bruker / her, som alltid gir desimal (float), selv om resultatet er heltall
+            # Eksempel: 4 / 2 = 2.0  og  5 / 2 = 2.5
             return str(num1 / num2)
+
+            # Hvis vi ville hatt heltall, kunne vi brukt // (heltallsdivisjon)
+            # Eksempel: 5 // 2 = 2  og -5 // 2 = -3
+            # Merk: // runder alltid ned mot minus uendelig, ikke til nærmeste tall
         case 'opphoyd':
             return str(num1 ** num2)
         
