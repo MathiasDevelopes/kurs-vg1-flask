@@ -20,6 +20,9 @@ def calculate(num1: int, operator: str, num2: int):
 
     # Vi sjekker hvilken operator brukeren har valgt
     # Lett å legge til flere operatorer senere
+    # Du kan tenke på dette som en if-statement,
+    # match operator betyr egentlig: hva er verdien av operator?
+    # Når vi har case 'pluss', er det det samme som å sjekke om operator er lik 'pluss'
     match operator:
         case 'pluss':
             # Pluss sammen tallene
