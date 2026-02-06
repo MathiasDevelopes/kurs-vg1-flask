@@ -11,12 +11,12 @@ def joke():
     return "Why did the chicken cross the road? No idea."
 
 @app.route('/hello/<string:name>')
-def hello(name: str):
+def hello(name):
     return "Hei " + name
 
 # Merk deg at vi bruker <int:num> for tall her, da sikrer vi at det vi får som input er en integer (tall).
 @app.route('/calculate/<int:num1>/<string:operator>/<int:num2>')
-def calculate(num1: int, operator: str, num2: int):
+def calculate(num1, operator, num2):
 
     # Vi sjekker hvilken operator brukeren har valgt
     # Lett å legge til flere operatorer senere
