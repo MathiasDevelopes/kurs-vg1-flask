@@ -14,7 +14,7 @@ def joke():
 def hello(name):
     return "Hei " + name
 
-# Merk deg at vi bruker <int:num> for tall her, da sikrer vi at det vi får som input er en integer (tall).
+# Merk deg at vi bruker <int:num> for tall her, da sikrer vi at det vi får som input er en integer (et helt tall).
 @app.route('/calculate/<int:num1>/<string:operator>/<int:num2>')
 def calculate(num1, operator, num2):
 
